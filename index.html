@@ -1,6 +1,15 @@
 <html>
+  <head>
+    <meta name="color-scheme" content="dark">
+  </head>
   <body>
-    <h1>Hola mundo</h1>
+    <script>
+      fetch('/ejercicio.github.io/Secret.txt')
+        .then(r => r.text())
+        .then(t => {
+          document.getElementById('contenido').textContent = t;
+        })
+    </script>
   </body>
 </html>
 
