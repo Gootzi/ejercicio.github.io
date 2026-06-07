@@ -13,12 +13,13 @@
         
 
         const ran = 1373;
-        const v = true;
+        let v = true;
 
         while (v){
             let n = generador(10000,99999999);
             if (n % ran == 0) {
                 document.getElementById("value").innerText = "Random value is ${n}";
+                v = false
                    }
             }
         }
